@@ -1,0 +1,94 @@
+// Reset
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+// UI
+
+div.simple-responsive-table{
+	div.srt-row{
+		border-bottom: solid #eee 1px;
+		div.srt-col{
+			padding: 10px;
+		}
+	}
+}
+
+// Plugin
+div.simple-responsive-table{
+	div.srt-row{
+		display: block;
+		&:first-child{
+			font-weight: bold;
+		}
+		div.srt-col-hidden{
+			display: none;
+			padding: 10px;
+			background: #f9f9f9;
+			font-weight: bold;
+		}
+		div.srt-col{
+			display: inline-block;
+			vertical-align: top;
+			&.srt-col-1{
+				width: 1 / 12 * 100%;
+			}
+			&.srt-col-2{
+				width: 2 / 12 * 100%;
+			}
+			&.srt-col-3{
+				width: 3 / 12 * 100%;
+			}
+			&.srt-col-4{
+				width: 4 / 12 * 100%;
+			}
+			&.srt-col-5{
+				width: 5 / 12 * 100%;
+			}
+			&.srt-col-6{
+				width: 6 / 12 * 100%;
+			}
+			&.srt-col-7{
+				width: 7 / 12 * 100%;
+			}
+			&.srt-col-8{
+				width: 8 / 12 * 100%;
+			}
+			&.srt-col-9{
+				width: 9 / 12 * 100%;
+			}
+			&.srt-col-10{
+				width: 10 / 12 * 100%;
+			}
+			&.srt-col-11{
+				width: 11 / 12 * 100%;
+			}
+			&.srt-col-12{
+				width: 12 / 12 * 100%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	div.simple-responsive-table{
+		div.srt-row{
+			text-align: center;
+			border-color: #000;
+			&:first-child{
+				display: none;
+			}
+			div.srt-col-hidden{
+				display: block;
+			}
+			div.srt-col{
+				text-align: center;
+				display: block;
+				width: 100% !important;
+			}
+		}
+	}
+}

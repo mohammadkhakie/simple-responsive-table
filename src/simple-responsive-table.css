@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+div.simple-responsive-table div.srt-row {
+  border-bottom: solid #eee 1px;
+}
+div.simple-responsive-table div.srt-row div.srt-col {
+  padding: 10px;
+}
+
+div.simple-responsive-table div.srt-row {
+  display: block;
+}
+div.simple-responsive-table div.srt-row:first-child {
+  font-weight: bold;
+}
+div.simple-responsive-table div.srt-row div.srt-col-hidden {
+  display: none;
+  padding: 10px;
+  background: #f9f9f9;
+  font-weight: bold;
+}
+div.simple-responsive-table div.srt-row div.srt-col {
+  display: inline-block;
+  vertical-align: top;
+}
+div.simple-responsive-table div.srt-row div.srt-col.srt-col-1 {
+  width: 8.33333%;
+}
+div.simple-responsive-table div.srt-row div.srt-col.srt-col-2 {
+  width: 16.66667%;
+}
+div.simple-responsive-table div.srt-row div.srt-col.srt-col-3 {
+  width: 25%;
+}
+div.simple-responsive-table div.srt-row div.srt-col.srt-col-4 {
+  width: 33.33333%;
+}
+div.simple-responsive-table div.srt-row div.srt-col.srt-col-5 {
+  width: 41.66667%;
+}
+div.simple-responsive-table div.srt-row div.srt-col.srt-col-6 {
+  width: 50%;
+}
+div.simple-responsive-table div.srt-row div.srt-col.srt-col-7 {
+  width: 58.33333%;
+}
+div.simple-responsive-table div.srt-row div.srt-col.srt-col-8 {
+  width: 66.66667%;
+}
+div.simple-responsive-table div.srt-row div.srt-col.srt-col-9 {
+  width: 75%;
+}
+div.simple-responsive-table div.srt-row div.srt-col.srt-col-10 {
+  width: 83.33333%;
+}
+div.simple-responsive-table div.srt-row div.srt-col.srt-col-11 {
+  width: 91.66667%;
+}
+div.simple-responsive-table div.srt-row div.srt-col.srt-col-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  div.simple-responsive-table div.srt-row {
+    text-align: center;
+    border-color: #000;
+  }
+  div.simple-responsive-table div.srt-row:first-child {
+    display: none;
+  }
+  div.simple-responsive-table div.srt-row div.srt-col-hidden {
+    display: block;
+  }
+  div.simple-responsive-table div.srt-row div.srt-col {
+    text-align: center;
+    display: block;
+    width: 100% !important;
+  }
+}
