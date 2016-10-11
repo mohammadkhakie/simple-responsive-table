@@ -1,1 +1,1 @@
-# bs-table-to-grid-generator
+# Simple responsive table
